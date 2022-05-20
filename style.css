@@ -103,8 +103,14 @@ background-color: red;
 @keyframes round {
     100% {transform: rotate(360deg);}
 }
+
+.ex-11-icon {
+
+    font-size:60px;
+}
+
 .ex-11-icon:hover {
-    font-size: 60px;
+  
     animation: little-round 3s linear;
 }
 
@@ -150,4 +156,33 @@ background-color: red;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move-top-white 2s linear;
+}
+@keyframes move-top-white {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move-bottom-white 2s linear;
+}
+@keyframes move-bottom-white {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
 }
