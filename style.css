@@ -103,9 +103,25 @@ background-color: red;
 @keyframes round {
     100% {transform: rotate(360deg);}
 }
-.ex-11-icon {
+.ex-11-icon:hover {
     font-size: 60px;
+    animation: little-round 3s linear;
 }
+
+@keyframes little-round {
+    0% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+} 
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
