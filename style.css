@@ -97,6 +97,11 @@ background-color: red;
 }
 .ex-10-icon {
     font-size: 60px;
+    animation: round 3s infinite;
+}
+
+@keyframes round {
+    100% {transform: rotate(360deg);}
 }
 .ex-11-icon {
     font-size: 60px;
